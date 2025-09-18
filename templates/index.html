@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Project Management</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header-content">
+                <h1>🚀 Project Management - Kanban Board</h1>
+                <div class="header-actions">
+                    <button id="add-task-btn" class="btn btn-primary">+ Add Task</button>
+                    <button id="manage-sprints-btn" class="btn btn-secondary">Manage Sprints</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="sprint-info" id="sprint-info">
+                <div class="current-sprint">
+                    <span id="current-sprint-name">No active sprint</span>
+                    <span id="current-sprint-dates"></span>
+                </div>
+            </div>
+
+            <div class="kanban-board" id="kanban-board">
+                <div class="kanban-column" data-status="todo">
+                    <div class="column-header">
+                        <h3>📋 To Do</h3>
+                        <span class="task-count" id="todo-count">0</span>
+                    </div>
+                    <div class="column-content" id="todo-tasks"></div>
+                </div>
+
+                <div class="kanban-column" data-status="in-progress">
+                    <div class="column-header">
+                        <h3>🔄 In Progress</h3>
+                        <span class="task-count" id="in-progress-count">0</span>
+                    </div>
+                    <div class="column-content" id="in-progress-tasks"></div>
+                </div>
+
+                <div class="kanban-column" data-status="review">
+                    <div class="column-header">
+                        <h3>👀 Review</h3>
+                        <span class="task-count" id="review-count">0</span>
+                    </div>
+                    <div class="column-content" id="review-tasks"></div>
+                </div>
+
+                <div class="kanban-column" data-status="done">
+                    <div class="column-header">
+                        <h3>✅ Done</h3>
+                        <span class="task-count" id="done-count">0</span>
+                    </div>
+                    <div class="column-content" id="done-tasks"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Task Modal -->
+    <div id="task-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Add New Task</h2>
+                <button class="close-btn" id="close-modal">&times;</button>
+            </div>
+            <form id="task-form">
+                <div class="form-group">
+                    <label for="task-title">Title*</label>
+                    <input type="text" id="task-title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="task-description">Description</label>
+                    <textarea id="task-description" name="description" rows="3"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="task-priority">Priority</label>
+                        <select id="task-priority" name="priority">
+                            <option value="low">Low</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="high">High</option>
+                            <option value="critical">Critical</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-assignee">Assignee</label>
+                        <input type="text" id="task-assignee" name="assignee" placeholder="Enter name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="task-sprint">Sprint</label>
+                    <select id="task-sprint" name="sprintId">
+                        <option value="">No Sprint</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="cancel-task" class="btn btn-secondary">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Task</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sprint Modal -->
+    <div id="sprint-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Manage Sprints</h2>
+                <button class="close-btn" id="close-sprint-modal">&times;</button>
+            </div>
+            <div class="sprint-content">
+                <div class="sprint-form-section">
+                    <h3>Create New Sprint</h3>
+                    <form id="sprint-form">
+                        <div class="form-group">
+                            <label for="sprint-name">Sprint Name*</label>
+                            <input type="text" id="sprint-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sprint-description">Description</label>
+                            <textarea id="sprint-description" name="description" rows="2"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="sprint-start-date">Start Date</label>
+                                <input type="date" id="sprint-start-date" name="startDate">
+                            </div>
+                            <div class="form-group">
+                                <label for="sprint-end-date">End Date</label>
+                                <input type="date" id="sprint-end-date" name="endDate">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Sprint</button>
+                    </form>
+                </div>
+                <div class="sprint-list-section">
+                    <h3>Existing Sprints</h3>
+                    <div id="sprint-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
