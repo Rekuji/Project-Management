@@ -1,0 +1,27 @@
+{
+  "name": "project-management-kanban",
+  "version": "1.0.0",
+  "description": "A sprint and kanban board project management system",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node src/app.js --dev",
+    "setup": "node scripts/setup.js"
+  },
+  "keywords": [
+    "kanban",
+    "sprint",
+    "project-management",
+    "agile",
+    "scrum"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}

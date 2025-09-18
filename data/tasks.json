@@ -1,0 +1,79 @@
+[
+  {
+    "id": "task-1",
+    "title": "Set up project repository",
+    "description": "Initialize the project repository with basic structure and documentation",
+    "status": "done",
+    "priority": "high",
+    "assignee": "Developer",
+    "sprintId": "sprint-1",
+    "createdAt": "2025-09-18T01:48:19.071Z",
+    "updatedAt": "2025-09-18T01:48:19.071Z"
+  },
+  {
+    "id": "task-2",
+    "title": "Design kanban board interface",
+    "description": "Create wireframes and design mockups for the kanban board user interface",
+    "status": "done",
+    "priority": "medium",
+    "assignee": "Designer",
+    "sprintId": "sprint-1",
+    "createdAt": "2025-09-18T01:48:19.071Z",
+    "updatedAt": "2025-09-18T01:48:19.071Z"
+  },
+  {
+    "id": "task-3",
+    "title": "Implement drag and drop functionality",
+    "description": "Add drag and drop support for moving tasks between columns",
+    "status": "in-progress",
+    "priority": "high",
+    "assignee": "Developer",
+    "sprintId": "sprint-1",
+    "createdAt": "2025-09-18T01:48:19.071Z",
+    "updatedAt": "2025-09-18T01:48:19.071Z"
+  },
+  {
+    "id": "task-4",
+    "title": "Add task creation modal",
+    "description": "Create a modal dialog for adding new tasks with all necessary fields",
+    "status": "review",
+    "priority": "medium",
+    "assignee": "Developer",
+    "sprintId": "sprint-1",
+    "createdAt": "2025-09-18T01:48:19.071Z",
+    "updatedAt": "2025-09-18T01:48:19.071Z"
+  },
+  {
+    "id": "task-5",
+    "title": "Write user documentation",
+    "description": "Create comprehensive documentation for end users",
+    "status": "todo",
+    "priority": "low",
+    "assignee": "Technical Writer",
+    "sprintId": "sprint-1",
+    "createdAt": "2025-09-18T01:48:19.071Z",
+    "updatedAt": "2025-09-18T01:48:19.071Z"
+  },
+  {
+    "id": "task-6",
+    "title": "Set up testing framework",
+    "description": "Configure unit and integration testing tools",
+    "status": "todo",
+    "priority": "medium",
+    "assignee": "QA Engineer",
+    "sprintId": null,
+    "createdAt": "2025-09-18T01:48:19.071Z",
+    "updatedAt": "2025-09-18T01:48:19.071Z"
+  },
+  {
+    "id": "333a9628-d65a-47df-95f8-3ceebe40dd5b",
+    "title": "Test New Task",
+    "description": "This is a test task to verify the functionality",
+    "status": "todo",
+    "priority": "high",
+    "assignee": "Test User",
+    "sprintId": null,
+    "createdAt": "2025-09-18T01:51:32.794Z",
+    "updatedAt": "2025-09-18T01:51:32.794Z"
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "sprint-1",
+    "name": "Sprint 1 - Initial Setup",
+    "description": "First sprint to set up the project foundation",
+    "startDate": "2025-09-18",
+    "endDate": "2025-10-02",
+    "status": "active",
+    "createdAt": "2025-09-18T01:48:19.071Z"
+  }
+]

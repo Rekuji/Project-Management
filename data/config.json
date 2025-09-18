@@ -1,0 +1,15 @@
+{
+  "kanbanColumns": [
+    "todo",
+    "in-progress",
+    "review",
+    "done"
+  ],
+  "priorities": [
+    "low",
+    "medium",
+    "high",
+    "critical"
+  ],
+  "projectName": "My Project"
+}
