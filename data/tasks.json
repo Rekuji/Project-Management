@@ -64,5 +64,16 @@
     "sprintId": null,
     "createdAt": "2025-09-18T01:48:19.071Z",
     "updatedAt": "2025-09-18T01:48:19.071Z"
+  },
+  {
+    "id": "333a9628-d65a-47df-95f8-3ceebe40dd5b",
+    "title": "Test New Task",
+    "description": "This is a test task to verify the functionality",
+    "status": "todo",
+    "priority": "high",
+    "assignee": "Test User",
+    "sprintId": null,
+    "createdAt": "2025-09-18T01:51:32.794Z",
+    "updatedAt": "2025-09-18T01:51:32.794Z"
   }
 ]
